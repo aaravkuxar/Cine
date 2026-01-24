@@ -127,8 +127,10 @@ class CineApplication(Adw.Application):
             if path:
                 win.mpv.loadfile(path, "append-play")
 
-        if not open_new:
-            win.mpv.pause = False
+        for window in self.get_windows():
+            w = cast(CineWindow, window)
+            # Pause previous opened windows
+            w.mpv.pause = w != win
 
         win._hide_ui_timeout()
 
