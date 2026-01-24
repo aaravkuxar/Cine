@@ -314,7 +314,12 @@ template $CineWindow: Adw.ApplicationWindow {
                   ]
 
                   tooltip-text: _("Playlist");
-                  icon-name: "view-list-bullet-symbolic";
+
+                  Image {
+                    use-fallback: true;
+                    icon-name: "view-list-bullet-symbolic";
+                  }
+
                   valign: end;
                   action-name: "win.open-playlist-dialog";
                 }
