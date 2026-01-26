@@ -825,8 +825,8 @@ class CineWindow(Adw.ApplicationWindow):
         self.previous_button.props.sensitive = self.can_go_prev
         self.next_button.props.sensitive = self.can_go_next
 
-        self.playlist_shuffle_toggle_button.props.sensitive = has_multiple
-        self.playlist_loop_toggle_button.props.sensitive = has_multiple
+        self.playlist_shuffle_toggle_button.props.visible = has_multiple
+        self.playlist_loop_toggle_button.props.visible = has_multiple
 
     def _on_drop_enter(self, target, _x, _y):
         GLib.timeout_add(10, self.revealer_drop_indicator.set_reveal_child, True)
