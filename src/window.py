@@ -950,6 +950,9 @@ class CineWindow(Adw.ApplicationWindow):
 
         self.mpv.keydown(mpv_button)
 
+        self._show_ui()
+        self._hide_ui_timeout()
+
         if button != 1:
             gesture.set_state(Gtk.EventSequenceState.CLAIMED)
         elif button == 1 and n_press == 2:
