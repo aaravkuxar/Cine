@@ -69,6 +69,8 @@ FORWARD        seek 60
 REWIND         seek -60
 NEXT           playlist-next
 PREV           playlist-prev
+ctrl+[         frame-step -1 seek #{_("Go Back One Frame")}
+ctrl+]         frame-step 1 seek #{_("Advance One Frame")}
 VOLUME_UP      add volume 5
 VOLUME_DOWN    add volume -5
 MUTE           cycle mute
