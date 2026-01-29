@@ -34,6 +34,8 @@ from .utils import (
     INPUT_CONF,
 )
 
+DEFAULT_WIDTH, DEFAULT_HEIGHT = 1088, 612
+
 from .options import OptionsMenuButton
 from .playlist import Playlist
 from .preferences import sync_mpv_with_settings
@@ -221,7 +223,7 @@ class CineWindow(Adw.ApplicationWindow):
         self.set_cursor_from_name(None)
 
     def _setup_elements(self):
-        self.set_default_size(1056, 594)
+        self.set_default_size(DEFAULT_WIDTH, DEFAULT_HEIGHT)
         self.set_title(_("Cine"))
         max_vol = cast(int, self.mpv.volume_max)
         self.volume_scale_adjustment.set_upper(max_vol)
@@ -1080,7 +1082,7 @@ class CineWindow(Adw.ApplicationWindow):
         if width <= 0 or height <= 0:
             return
 
-        MAX_WIDTH, MAX_HEIGHT = 1056, 594
+        MAX_WIDTH, MAX_HEIGHT = DEFAULT_WIDTH, DEFAULT_HEIGHT
 
         aspect_ratio = width / height
         new_w = width
