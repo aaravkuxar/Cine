@@ -41,7 +41,7 @@ RIGHT          seek 5 exact #{_("Seek 5s Forward")}
 F11            cycle fullscreen; #{_("Fullscreen")}
 f              cycle fullscreen; #{_("Fullscreen")}
 MBTN_LEFT_DBL  cycle fullscreen
-MOUSE_BTN1     cycle fullscreen
+MBTN_MID       cycle fullscreen
 MBTN_RIGHT     cycle pause
 MBTN_BACK      playlist-prev; 
 MBTN_FORWARD   playlist-next; 
