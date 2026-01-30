@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.diegopvlk.Cine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 14:57-0300\n"
+"POT-Creation-Date: 2026-01-30 10:14-0300\n"
 "PO-Revision-Date: 2026-01-26 08:45-0300\n"
 "Last-Translator: Vladimir Kosolapov\n"
 "Language-Team: \n"
@@ -19,7 +19,7 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: data/io.github.diegopvlk.Cine.desktop.in:2 src/main.py:210 src/mpris.py:146
-#: src/mpris.py:364 src/window.py:132 src/window.py:228 src/window.py:1249
+#: src/mpris.py:364 src/window.py:138 src/window.py:234 src/window.py:1257
 #: src/window.blp:6
 msgid "Cine"
 msgstr "Cine"
@@ -94,19 +94,19 @@ msgstr "Vladimir Kosolapov https://github.com/vmkspv"
 msgid "Unknown title"
 msgstr "Название неизвестно"
 
-#: src/options.py:147 src/options.blp:79
+#: src/options.py:149 src/options.blp:79
 msgid "Original"
 msgstr "Оригинал"
 
-#: src/playlist.py:47 src/window.py:859 src/window.py:1134
+#: src/playlist.py:47 src/window.py:865 src/window.py:1142
 msgid "File Error"
 msgstr "Ошибка файла"
 
-#: src/playlist.py:121 src/window.py:545 src/playlist.blp:23 src/window.blp:91
+#: src/playlist.py:121 src/window.py:551 src/playlist.blp:23 src/window.blp:91
 msgid "Add Files"
 msgstr "Добавить файлы"
 
-#: src/shortcuts.py:29 src/shortcuts.py:30 src/window.py:1179
+#: src/shortcuts.py:29 src/shortcuts.py:30 src/window.py:1187
 #: src/window.blp:197
 msgid "Volume"
 msgstr "Громкость"
@@ -166,8 +166,8 @@ msgstr "Увеличить масштаб"
 msgid "Zoom Out"
 msgstr "Уменьшить масштаб"
 
-#: src/shortcuts.py:55 src/shortcuts.py:56 src/options.blp:497
-#: src/options.blp:521
+#: src/shortcuts.py:55 src/shortcuts.py:56 src/options.blp:552
+#: src/options.blp:576
 msgid "Subtitle Delay"
 msgstr "Задержка субтитров"
 
@@ -200,7 +200,7 @@ msgid "Mute/Unmute"
 msgstr "Включить/выключить звук"
 
 #: src/shortcuts.py:60 src/shortcuts.py:61 src/shortcuts.py:62
-#: src/options.blp:552 src/options.blp:576
+#: src/options.blp:607 src/options.blp:631
 msgid "Audio Delay"
 msgstr "Задержка аудио"
 
@@ -308,7 +308,7 @@ msgstr "Уменьшить скорость воспроизведения"
 msgid "Increase Playback Speed"
 msgstr "Увеличить скорость воспроизведения"
 
-#: src/shortcuts.py:92 src/options.blp:597
+#: src/shortcuts.py:92 src/options.blp:652
 msgid "Reset Playback Speed"
 msgstr "Сбросить скорость воспроизведения"
 
@@ -332,52 +332,52 @@ msgstr "Воспроизведение"
 msgid "Miscellaneous"
 msgstr "Разное"
 
-#: src/window.py:427 src/window.py:852 src/window.blp:96
+#: src/window.py:433 src/window.py:858 src/window.blp:96
 msgid "Add Subtitle Track"
 msgstr "Добавить дорожку субтитров"
 
-#: src/window.py:429 src/window.py:438
+#: src/window.py:435 src/window.py:444
 msgid "None"
 msgstr "Нет"
 
-#: src/window.py:436 src/window.blp:101
+#: src/window.py:442 src/window.blp:101
 msgid "Add Audio Track"
 msgstr "Добавить аудиодорожку"
 
-#: src/window.py:475
+#: src/window.py:481
 msgid "Track"
 msgstr "Дорожка"
 
-#: src/window.py:517 src/shortcuts-dialog.blp:21 src/window.blp:86
+#: src/window.py:523 src/shortcuts-dialog.blp:21 src/window.blp:86
 #: src/window.blp:431
 msgid "Open Folder"
 msgstr "Открыть папку"
 
-#: src/window.py:542 src/shortcuts-dialog.blp:16 src/window.blp:81
+#: src/window.py:548 src/shortcuts-dialog.blp:16 src/window.blp:81
 msgid "Open Files"
 msgstr "Открыть файлы"
 
-#: src/window.py:548
+#: src/window.py:554
 msgid "Add Subtitle"
 msgstr "Добавить субтитры"
 
-#: src/window.py:551
+#: src/window.py:557
 msgid "Add Audio"
 msgstr "Добавить аудио"
 
-#: src/window.py:564
+#: src/window.py:570
 msgid "Subtitle"
 msgstr "Субтитры"
 
-#: src/window.py:569 src/window.blp:254
+#: src/window.py:575 src/window.blp:254
 msgid "Audio"
 msgstr "Аудио"
 
-#: src/window.py:573
+#: src/window.py:579
 msgid "Media"
 msgstr "Медиа"
 
-#: src/window.py:856 src/window.py:871 src/playlist.blp:78
+#: src/window.py:862 src/window.py:877 src/playlist.blp:78
 msgid "Add to Playlist"
 msgstr "Добавить в плейлист"
 
@@ -450,14 +450,23 @@ msgid "Reset Saturation"
 msgstr "Сбросить насыщенность"
 
 #: src/options.blp:487
+msgid "Reset Hue"
+msgstr "Сбросить оттенок"
+
+#. TRANSLATORS: Do not use "Color" or "Temperature", those are different things
+#: src/options.blp:498 src/options.blp:521
+msgid "Hue"
+msgstr "Оттенок"
+
+#: src/options.blp:542
 msgid "Reset Subtitle Delay"
 msgstr "Сбросить задержку субтитров"
 
-#: src/options.blp:542
+#: src/options.blp:597
 msgid "Reset Audio Delay"
 msgstr "Сбросить задержку аудио"
 
-#: src/options.blp:607 src/options.blp:631
+#: src/options.blp:662 src/options.blp:686
 msgid "Playback Speed"
 msgstr "Скорость воспроизведения"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.diegopvlk.Cine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 22:16+0100\n"
+"POT-Creation-Date: 2026-01-30 10:14-0300\n"
 "PO-Revision-Date: 2026-01-29 22:11+0100\n"
 "Last-Translator: Mimolet <theMimolet@proton.me>\n"
 "Language-Team: French\n"
@@ -97,7 +97,7 @@ msgstr "Mimolet <theMimolet@proton.me>, 2026"
 msgid "Unknown title"
 msgstr "Titre inconnu"
 
-#: src/options.py:147 src/options.blp:79
+#: src/options.py:149 src/options.blp:79
 msgid "Original"
 msgstr "Original"
 
@@ -169,8 +169,8 @@ msgstr "Zoom avant"
 msgid "Zoom Out"
 msgstr "Zoom arrière"
 
-#: src/shortcuts.py:55 src/shortcuts.py:56 src/options.blp:497
-#: src/options.blp:521
+#: src/shortcuts.py:55 src/shortcuts.py:56 src/options.blp:552
+#: src/options.blp:576
 msgid "Subtitle Delay"
 msgstr "Délai des sous-titres"
 
@@ -203,7 +203,7 @@ msgid "Mute/Unmute"
 msgstr "Activer/Désactiver le son"
 
 #: src/shortcuts.py:60 src/shortcuts.py:61 src/shortcuts.py:62
-#: src/options.blp:552 src/options.blp:576
+#: src/options.blp:607 src/options.blp:631
 msgid "Audio Delay"
 msgstr "Délai de l'audio"
 
@@ -311,7 +311,7 @@ msgstr "Réduire la vitesse de lecture"
 msgid "Increase Playback Speed"
 msgstr "Augmenter la vitesse de lecture"
 
-#: src/shortcuts.py:92 src/options.blp:597
+#: src/shortcuts.py:92 src/options.blp:652
 msgid "Reset Playback Speed"
 msgstr "Réinitialiser la vitesse de lecture"
 
@@ -453,14 +453,23 @@ msgid "Reset Saturation"
 msgstr "Réinitialiser la saturation"
 
 #: src/options.blp:487
+msgid "Reset Hue"
+msgstr "Réinitialiser la Teinte"
+
+#. TRANSLATORS: Do not use "Color" or "Temperature", those are different things
+#: src/options.blp:498 src/options.blp:521
+msgid "Hue"
+msgstr "Teinte"
+
+#: src/options.blp:542
 msgid "Reset Subtitle Delay"
 msgstr "Réinitialiser le délai des sous-titres"
 
-#: src/options.blp:542
+#: src/options.blp:597
 msgid "Reset Audio Delay"
 msgstr "Réinitialiser le délai de l'audio"
 
-#: src/options.blp:607 src/options.blp:631
+#: src/options.blp:662 src/options.blp:686
 msgid "Playback Speed"
 msgstr "Vitesse de lecture"
 
