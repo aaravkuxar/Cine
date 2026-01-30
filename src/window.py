@@ -698,8 +698,10 @@ class CineWindow(Adw.ApplicationWindow):
             icon = "audio-volume-low-symbolic"
         elif volume < 66:
             icon = "audio-volume-medium-symbolic"
-        else:
+        elif volume <= 100:
             icon = "audio-volume-high-symbolic"
+        else:
+            icon = "audio-volume-overamplified-symbolic"
         self.volume_menu_button.set_icon_name(icon)
 
     def _update_progress(self, current_time):
